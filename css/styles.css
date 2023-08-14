@@ -65,7 +65,6 @@ ol {
 /* HEADER */
 
 .header {
-    padding: 24px 0;
     border-bottom: 1px solid var(--color-accent-cornflower);
 }
 
@@ -77,7 +76,6 @@ ol {
 
 .nav {
     display: flex;
-    gap: 77px;
     align-items: center;
 }
 
@@ -94,6 +92,7 @@ ol {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--color-primary-iris);
+    margin-right: 76px;
 }
 
 .logo-studio-header {
@@ -102,6 +101,10 @@ ol {
 
 .logo-studio-footer {
     color: var(--color-light-cloud);
+}
+
+.nav-item {
+    padding: 24px 0;
 }
 
 .nav-link {
@@ -136,6 +139,8 @@ ol {
 
 .footer {
     background-color: var(--color-dark-navyblue);
+
+    padding: 100px 0;
 }
 
 .footer-text {
@@ -143,12 +148,16 @@ ol {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-light-cloud);
+
+    max-width: 264px;
+    margin-top: 16px;
 }
 
 /* HERO - SECTION 1 */
 
 .hero {
     background-color: var(--color-dark-navyblue);
+    padding: 192px 0;
 }
 
 .hero-title {
@@ -158,6 +167,9 @@ ol {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--color-white);
+
+    max-width: 496px;
+    margin: 0 auto 48px;
 }
 
 .hero-button {
@@ -168,6 +180,13 @@ ol {
     letter-spacing: 0.04em;
     background-color: var(--color-primary-iris);
     color: var(--color-white);
+
+    display: block;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    margin: 0 auto;
+    padding: 16px 32px;
 }
 
 .hero-button:hover, .hero-button:focus {
@@ -176,12 +195,20 @@ ol {
 
 /* PRINCIPLES - SECTION 2 */
 
+.principles-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
 .principles-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--color-dark-navyblue);
+
+    margin-bottom: 8px;
 }
 
 .principles-text {
@@ -192,6 +219,10 @@ ol {
 
 /* JOBS - SECTION 3 */
 
+.job {
+    padding-top: 0px;
+}
+
 .job-title {
     font-weight: 600;
     font-size: 36px;
@@ -200,16 +231,25 @@ ol {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--color-dark-navyblue);
+
+    margin-bottom: 72px;
+}
+
+.job-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+.job-link {
+    display: block;
 }
 
 /* TEAM - SECTION 4 */
 
 .team {
     background-color: var(--color-light-cloud);
-}
-
-.team-card {
-    background-color: var(--color-white);
 }
 
 .team-title {
@@ -220,6 +260,26 @@ ol {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--color-dark-navyblue);
+
+    margin-bottom: 72px;
+}
+
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+.team-card {
+    background-color: var(--color-white);
+    padding-bottom: 32px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-image {
+    margin-bottom: 32px;
 }
 
 .team-name {
@@ -229,6 +289,8 @@ ol {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--color-dark-navyblue);
+
+    margin-bottom: 8px;
 }
 
 .team-position {
@@ -240,21 +302,52 @@ ol {
 
 /* PORTFOLIO CONTENT */
 
+.examples {
+    padding-top: 96px;
+}
+
+.examples-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
+
+.examples-card {
+    border-bottom: 0.5px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
 .examples-name {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--color-dark-navyblue);
+
+    margin-top: 32px;
+    margin-bottom: 8px;
+    margin-left: 16px;
 }
 
 .examples-filter {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+
+    margin-left: 16px;
+    margin-bottom: 32px;
 }
 
 /* PORTFOLIO FILTER */
+
+.filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    margin-bottom: 72px;
+}
 
 .filter-button {
     background-color: var(--color-light-cloud);
@@ -265,10 +358,30 @@ ol {
     text-align: center;
     letter-spacing: 0.04em;
     color: var(--color-primary-iris);
+
+    padding: 12px 24px;
 }
 
 .filter-button:hover, .filter-button:focus {
     background-color: var(--color-pressed-ocean);
     border-color: var(--color-pressed-ocean);
     color: var(--color-white);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* HELPERS */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
