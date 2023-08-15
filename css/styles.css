@@ -111,6 +111,7 @@ ol {
 }
 
 .nav-link {
+    display: block;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -154,7 +155,6 @@ ol {
     color: var(--color-light-cloud);
 
     max-width: 264px;
-    margin-top: 16px;
 }
 
 /* HERO - SECTION 1 */
